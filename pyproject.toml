@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "taskforce"
+version = "0.1.0"
+description = "Multi-LLM roundtable for diverse perspective gathering"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+keywords = ["llm", "multi-model", "roundtable", "mcp", "agent"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "litellm",
+    "python-dotenv",
+    "pydantic>=2.0",
+    "loguru",
+]
+
+[project.optional-dependencies]
+mcp = ["mcp"]
+
+[project.urls]
+Repository = "https://github.com/gatesplan/taskforce"
+Issues = "https://github.com/gatesplan/taskforce/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/taskforce"]

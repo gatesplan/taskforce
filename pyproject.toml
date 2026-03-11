@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ff-taskforce"
-version = "0.1.0"
+version = "0.1.1"
 description = "Multi-LLM roundtable for diverse perspective gathering"
 readme = "README.md"
 license = {text = "MIT"}

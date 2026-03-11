@@ -37,6 +37,10 @@ GEMINI_API_KEY=AI...
 
 Add to your MCP server config:
 
+`TASKFORCE_CALLER_PROVIDER` is the provider of the agent that will call this tool.
+The matching provider's model is excluded from the panel -- querying the same model that is already reasoning adds no diversity.
+For example, if Claude Code is the caller, set it to `"anthropic"` so Claude is excluded from the panel.
+
 ```json
 {
   "mcpServers": {

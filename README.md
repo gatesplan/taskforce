@@ -12,13 +12,13 @@ The primary interface is the MCP wrapper (`roundtable_discuss` tool), which allo
 ### 1. Install
 
 ```bash
-pip install taskforce
+pip install ff-taskforce
 ```
 
 For MCP server support:
 
 ```bash
-pip install taskforce[mcp]
+pip install ff-taskforce[mcp]
 ```
 
 ### 2. Set environment variables
